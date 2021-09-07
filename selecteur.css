@@ -1,0 +1,47 @@
+h1 {
+    color: red;
+    font-size: 3em;
+    text-align: center;
+}
+
+p {
+    text-transform: lowercase;
+    text-align: justify;
+}
+
+p::first-letter {
+    initial-letter: Capitalize;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#paragraphe1::first-letter{
+    color: purple;
+}
+
+#paragraphe2::first-letter, #paragraphe3::first-letter, #paragraphe4::first-letter, #paragraphe5::first-letter{
+    color: green;
+}
+
+h2:hover{
+    animation: 3s multicolor;
+}
+@keyframes multicolor {
+    0% {
+        color: black;
+    }
+    33%{
+        color: red;
+    }
+    66%{
+        color: green;
+    }
+    100%{
+        color: blue;
+    }
+    
+}
+
+
